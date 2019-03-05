@@ -6,34 +6,34 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across an empty store",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Go left",
+                    nextLevel: "Left,
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Go right",
+                    nextLevel: "Right",
                 },
             ]
         },
 
-        cave: {
+        Left: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You come across the bakery section!",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Start eating ",
+                    nextLevel: "Tour around the bakery section",
                 },
             ]
         },
 
-        field: {
-            message: "Some adventurer you are...",
+        Right: {
+            message: "You get hit by a car",
             choices: [
                 {
                     text: "Start over",
